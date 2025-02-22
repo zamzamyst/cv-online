@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAD - CV SULTAN AFDAN ZAMZAMI</title>
+    <link rel="icon" href="https://edurank.org/assets/img/uni-logos/telkom-university-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            border: 1px red solid;
+            font-family: "Ubuntu";
+            color: white;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 2px;
+            max-width: 100%;
+            background-color: #252734;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            min-height: 10vw;
+            background-color: #252734;
+        }
+
+        .container-menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3vw;
+            height: 5vw;
+            margin-left: 7vw;
+        }
+
+        .btn-menu {
+            font-weight: 500;
+            font-size: 1.2vw;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            color: #ff9b42;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            display: flex;
+            flex-direction: row;
+            margin-top: 8vw;
+
+        }
+
+        .container-caption {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 0.5vw;
+            padding-left: 7vw;
+            padding-right: 7vw;
+        }
+
+        .text-role {
+            font-weight: 500;
+            font-size: 2vw;
+        }
+
+        .text-name {
+            font-size: 4vw;
+        }
+
+        .text-description {
+            font-weight: 100;
+            font-size: 1.2vw;
+        }
+
+        .container-profile {
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            
+        }
+
+        .container-picture {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25vw;
+            height: 25vw;
+        }
+
+        .bg-picture {
+            width: 100%;
+            height: 100%;
+            border: 0.5vw solid rgba(103, 103, 103, 0.716);
+            border-radius: 100%;
+            background-color: #ff9b42;
+        }
+
+        .profile-picture {
+            position: absolute;
+            bottom: 0;
+            max-width: 25vw;
+            height: auto;
+            border-radius: 100%;
+        }
+
+        .about-section {
+            margin-top: 5vw;
+            background-color: #333647;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .intro {
+                flex-direction: column;
+            }
+
+            .intro__profile {
+                order: -1;
+                padding-top: 7vw;
+            }
+
+            .intro__caption {
+                text-align: center;
+                padding: 2vw 7vw 2vw 7vw;
+            }
+
+            .intro__profile {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container container-menu">
+            <a class="btn-menu btn-home" href="#">HOME</a>
+            <a class="btn-menu btn-skills" href="#">SKILLS</a>
+            <a class="btn-menu btn-experiences" href="#">EXPERIENCES</a>
+            <a class="btn-menu btn-education" href="#">EDUCATION</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="intro-section">
+        <div class="container container-caption">
+            <h1 class="text text-role">Frontend Web Developer</h1>
+            <h2 class="text text-name">Sultan Afdan Zamzami</h2>
+            <p class="text text-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus nostrum illo soluta consequatur
+                vitae fugiat fuga error. Quaerat,
+            </p>
+        </div>
+        <div class="container container-profile">
+            <div class="container container-picture">
+                <div class="bg bg-picture"></div>
+                <img class="profile-picture" src="/src/img/no-bg-profile.png" alt="Sultan Afdan Zamzami" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cupiditate.
+        </p>
+    </section>
+</body>
+
+</html>
