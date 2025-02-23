@@ -4,498 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WAD - CV SULTAN AFDAN ZAMZAMI</title>
+    <title>CV Sultan Afdan Zamzami - Telkom University</title>
     <link rel="icon" href="https://edurank.org/assets/img/uni-logos/telkom-university-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="src/styles/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            /* border: 1px red solid; */
-            font-family: "Ubuntu";
-            color: white;
-        }
-
-        body {
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            gap: 2px;
-            max-width: 100%;
-            background-color: #252734;
-        }
-
-        /* Header */
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            min-height: 100px;
-            background-color: #252734;
-        }
-
-        .container-menu {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 3vw;
-            height: 5vw;
-            margin-left: 9vw;
-        }
-
-        .btn-menu {
-            font-weight: 500;
-            font-size: 16px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-
-        .btn-menu:hover {
-            color: #ff9b42;
-            transform: scale(0.95);
-        }
-
-        .btn-home {
-            color: #ff9b42;
-        }
-
-        /* Intro Section */
-        .intro-section {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            padding: 11vw 9vw 3vw 10vw;
-            padding-bottom: 3vw;
-
-        }
-
-        .container-caption {
-            flex: 3;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            width: fit-content;
-            gap: 0.5vw;
-            /* padding-left: 9vw; */
-        }
-
-        .text-hello {
-            width: fit-content;
-            font-weight: 500;
-            font-size: 24px;
-        }
-
-        .text-name {
-            width: fit-content;
-            font-size: 40px;
-        }
-
-        .text-description {
-            width: 75%;
-            letter-spacing: 1px;
-            font-weight: 100;
-            font-size: 18px;
-        }
-
-        .container-btn-explore {
-            margin-top: 10px;
-            width: fit-content;
-
-        }
-
-        .btn-explore {
-            margin-right: 0.5vw;
-            padding-left: 20px;
-            padding-right: 20px;
-            width: fit-content;
-            height: 50px;
-            border-radius: 10px;
-            font-size: large;
-            font-weight: 700;
-            color: white;
-            background-color: #ff9b42;
-            transition: all 0.2s;
-        }
-
-        .btn-talk {
-            padding-left: 20px;
-            padding-right: 20px;
-            width: fit-content;
-            height: 50px;
-            border: 1px solid white;
-            border-radius: 10px;
-            font-size: large;
-            font-weight: 700;
-            color: white;
-            background-color: #252734;
-            transition: all 0.2s;
-        }
-
-        .btn-explore:hover {
-            background-color: #d5721c;
-            transform: scale(0.98);
-        }
-
-        .btn-talk:hover {
-            background-color: white;
-            color: #252734;
-            box-shadow: 0 0 10px 2px #000000;
-            transform: scale(0.98);
-        }
-
-        .container-intro-footer {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 1vw;
-            width: fit-content;
-            margin-top: 10vw;
-            font-size: 12px;
-        }
-
-        .text-download-cv {
-            font-weight: 500;
-        }
-
-        .link-download-cv {
-            color: #ff9b42;
-        }
-
-        .container-icon-social-media {
-            display: flex;
-            flex-direction: row;
-            gap: 0.5vw;
-        }
-
-        .icon-social-media {
-            width: 50px;
-            transition: all 0.2s;
-        }
-
-        .icon-social-media:hover {
-            border-radius: 10px;
-            box-shadow: 0 0 10px 2px #ff9b42;
-            transform: scale(0.90);
-        }
-
-        .container-profile {
-            flex: 2;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: start;
-        }
-
-        .container-picture {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 25vw;
-            height: 25vw;
-        }
-
-        .bg-picture {
-            width: 100%;
-            height: 100%;
-            border: 5px solid rgb(243, 243, 243);
-            border-radius: 100%;
-            background-color: #ff9b42;
-            box-shadow: 0 0 50px 2px #ff9b42;
-            transition: box-shadow 0.3s ease;
-            
-        }
-        
-        .container-profile:hover .bg-picture  {
-            box-shadow: 0 0 100px 2px #ffffff;
-        }
-
-        .profile-picture {
-            position: absolute;
-            bottom: 0;
-            max-width: 25vw;
-            height: auto;
-            border-radius: 100%;
-        }
-
-        .about-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 70px;
-            width: 100%;
-            height: auto;
-            padding-top: 100px;
-            padding-bottom: 100px;
-            background-color: #333647;
-        }
-
-        .container-title {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            width: fit-content;
-            padding-bottom: 10px;
-            border-bottom: 1px solid white;
-            border-bottom-width: 5px;
-            border-bottom-color: #ff9b42;
-            color: #ff9b42;
-
-        }
-
-        .text-about {
-            font-weight: 300;
-            font-size: large;
-        }
-
-        .container-about {
-            flex: 2;
-            display: flex;
-            justify-content: center;
-            width: 75%;
-            text-align: center;
-            line-height: 0.7cm;
-
-        }
-
-        .skills-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 100px;
-            width: 100%;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .container-skills {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 30px;
-        }
-        
-        .container-icon {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            height: fit-content;
-            width: 100px;
-            transition: all 0.2s;
-
-        }
-
-        .icon {
-            width: 80%;
-        }
-
-        .container-icon:hover {
-            transform: scale(1.1);
-            border-radius: 20px;
-            box-shadow: 0 0 20px 3px #ff9b42;
-        }
-
-        /* Experiences Section */
-        .experiences-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 120px;
-            padding-top: 100px;
-            padding-bottom: 200px;
-            background-color: #333647;
-        }
-
-        .container-experiences {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-            width: 75%;
-        }
-
-        .container-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            max-width: 400px;
-            height: 100%;
-            padding: 20px 20px 20px 20px;
-            border-radius: 30px;
-            box-shadow: 0 0 20px 1px #000000;
-            background-color: #252734;
-            transition: all 0.2s;
-        }
-        
-        .container-card:hover {
-            transform: scale(0.98);
-            /* background-color: #333647;      */
-            box-shadow: 0 0 20px 2px #ff9b42;
-        }
-
-        .image-card {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            width: 90%;
-            height: max-content;
-            border-radius: 15px;
-            background-color: white;
-
-        }
-
-        .image-first {
-            width: 75%;
-        }
-
-        .image-adhivasindo {
-            width: 65%;
-        }
-
-        .text-card {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            gap: 10px;
-            width: 90%;
-        }
-
-        .description-card {
-            font-weight: 300;
-            line-height: 0.6cm;
-            text-align: justify;
-        }
-
-        .category-card {
-            color: #ffb473;
-            padding-bottom: 20px;
-
-        }
-
-        .education-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 120px;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .container-education {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            width: 75%;
-            height: 500px;
-            padding: 10px;
-            border:#000000;
-            border-radius: 20px;
-            background-color: white;
-        }
-
-        .container-grid {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: red;
-        }
-
-        
-
-        /* Responsive */
-        @media (max-width: 600px) {
-
-            /* Header */
-            .header {
-                justify-content: center;
-            }
-
-            .container-menu {
-                margin: 0;
-            }
-
-            .btn-menu {
-                font-weight: 500;
-                font-size: 14px;
-                text-decoration: none;
-            }
-
-            /* Intro-Section */
-            .intro-section {
-                flex-direction: column;
-            }
-
-            .container-profile {
-                order: -1;
-                justify-content: center;
-                padding-top: 30px;
-            }
-
-            .container-picture {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40vw;
-                height: 40vw;
-            }
-
-            .bg-picture {
-                width: 100%;
-                height: 100%;
-                border: 0.5vw solid rgba(103, 103, 103, 0.716);
-                border-radius: 100%;
-                background-color: #ff9b42;
-            }
-
-            .profile-picture {
-                position: absolute;
-                bottom: 0;
-                max-width: 40vw;
-                height: auto;
-                border-radius: 100%;
-            }
-
-            .container-caption {
-                align-items: center;
-                text-align: center;
-                padding: 4vw 15vw 2vw 15vw;
-            }
-
-            .text-hello {
-                font-weight: 500;
-                font-size: 16px;
-            }
-
-            .text-name {
-                font-size: 28px;
-            }
-
-            .text-description {
-                margin-bottom: 10px;
-                width: 100%;
-                letter-spacing: 1px;
-                font-weight: 100;
-                font-size: 14px;
-            }
-
-            .container-intro-footer {
-                align-items: center;
-            }
-
-            .container-experiences {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -505,7 +21,7 @@
             <a class="btn-menu btn-home" href="#">HOME</a>
             <a class="btn-menu btn-skills" href="#skills-section">SKILLS</a>
             <a class="btn-menu btn-experiences" href="#experiences-section">EXPERIENCES</a>
-            <a class="btn-menu btn-education" href="#">EDUCATION</a>
+            <a class="btn-menu btn-education" href="#education-section">EDUCATION</a>
         </div>
     </header>
 
@@ -515,21 +31,27 @@
             <h1 class="text text-hello">Hello, It's me</h1>
             <h2 class="text text-name">Sultan Afdan Zamzami</h2>
             <p class="text text-description">
-                Information Systems Student at Telkom University | Frontend Web Developer | Mechanical Robotics Engineer
-                of R2045
+                Information Systems Student at Telkom University | Frontend Web
+                Enthusiast
             </p>
             <div class="container container-btn-explore">
-                <button class="btn btn-explore" >Get Started</button>
-                <button class="btn btn-talk">Let's Talk</button>
+                <a href="#about-section"><button class="btn btn-explore">Get Started</button></a>
+                <a href="https://wa.me/6281219287168" target="_blank"><button class="btn btn-talk">Let's
+                        Chat</button></a>
             </div>
             <div class="container container-intro-footer">
                 <h1 class="text text-download-cv">
-                    <a class="link-download-cv">Download</a> My Curriculum Vitae
+                    <a href="https://1drv.ms/b/c/102c69839390a726/ESankJODaSwggBCfEQAAAAAByf72AN4_W8u5eZV0VwaR6A?e=mes7wy"
+                        target="_blank" class="link-download-cv">Download</a>
+                    My Curriculum Vitae
                 </h1>
                 <div class="container container-icon-social-media">
-                    <img class="icon-social-media" src="src/icon/instagram-icon.png" alt="Logo Instagram`">
-                    <img class="icon-social-media" src="src/icon/linkedin-icon.png" alt="Logo LinkedIn">
-                    <img class="icon-social-media" src="src/icon/github-icon.png" alt="Logo GitHub">
+                    <a href="https://www.instagram.com/zamzamyst/" target="_blank"><img class="icon-social-media"
+                            src="src/icon/instagram-icon.png" alt="Logo Instagram`" /></a>
+                    <a href="https://www.linkedin.com/in/zamzamyst/" target="_blank"><img class="icon-social-media"
+                            src="src/icon/linkedin-icon.png" alt="Logo LinkedIn" /></a>
+                    <a href="https://github.com/zamzamyst" target="_blank"><img class="icon-social-media"
+                            src="src/icon/github-icon.png" alt="Logo GitHub" /></a>
                 </div>
             </div>
         </div>
@@ -542,90 +64,110 @@
     </section>
 
     <!-- About Section -->
-    <section  id="about-section" class="about-section">
+    <section id="about-section" class="about-section">
         <div class="container container-title">
             <h1>About Me</h1>
         </div>
         <div class="container container-about">
             <p class="text text-about">
-                Hi! I'm Sultan, second-year Information Systems student, with a special interest in Frontend
-                Development. Has the ability to develop websites using HTML, TailwindCSS, JavaScript, and basic
-                understanding of MySQL Database Management integration. Willing to learn and contribute to various
-                projects, has a great desire to improve technical skills, learn to work together and contribute in a
-                team to create efficient, effective, and innovative solutions in website development.
+                Hi! I'm Sultan, second-year Information Systems student, with a
+                special interest in Frontend Development. Has the ability to develop
+                websites using HTML, TailwindCSS, JavaScript, and basic understanding
+                of MySQL Database Management integration. Willing to learn and
+                contribute to various projects, has a great desire to improve
+                technical skills, learn to work together and contribute in a team to
+                create efficient, effective, and innovative solutions in website
+                development.
             </p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section  id="skills-section" class="skills-section">
+    <section id="skills-section" class="skills-section">
         <div class="container container-title">
             <h1>Skills</h1>
         </div>
         <div class="container container-skills">
             <div class="container container-icon">
-                <img class="icon" src="src/icon/365-logo.png" alt="Logo 365 Office">
+                <img class="icon icon-html" src="src/icon/figma-logo.png" alt="Logo Figma" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/figma-logo.png" alt="Logo Figma">
+                <img class="icon icon-html" src="src/icon/html-logo.png" alt="Logo HTML5" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/html-logo.png" alt="Logo HTML5">
+                <img class="icon icon-html" src="src/icon/css-logo.png" alt="Logo CSS3" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/css-logo.png" alt="Logo CSS3">
+                <img class="icon icon-html" src="src/icon/tailwind-logo.png" alt="Logo Tailwind" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/tailwind-logo.png" alt="Logo Tailwind">
+                <img class="icon icon-html" src="src/icon/js-logo.png" alt="Logo JavaScript" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/js-logo.png" alt="Logo JavaScript">
+                <img class="icon icon-html" src="src/icon/mysql-logo.svg " alt="Logo MySQL" />
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/mysql-logo.svg " alt="Logo MySQL">
+                <img class="icon" src="src/icon/python-logo.png" alt="Logo Python" />
+            </div>
+            <div class="container container-icon">
+                <img class="icon" src="src/icon/365-logo.png" alt="Logo 365 Office" />
             </div>
         </div>
     </section>
 
     <!-- Experiences Section -->
-    <section  id="experiences-section" class="experiences-section">
+    <section id="experiences-section" class="experiences-section">
         <div class="container-title">
             <h1>Experiences</h1>
         </div>
-        <div class="container container-experiences">
+        <div class="container container-experiences" targe>
             <div class="container container-card">
-                <di class="image-card">
-                    <img class="image-adhivasindo src=" src="src/img/adhivasindo-logo.png" alt="">
-                </di>
+                <div class="image-card">
+                    <img class="image-adhivasindo src=" src="src/img/adhivasindo-logo.png" alt="Adhivasindo Logo" />
+                </div>
                 <div class="text-card">
-                    <h1 class="title-card">
-                        Web Development Staff
-                    </h1>
-                    <p class="place-card">PT Adhikari Inovasi Indonesia (Adhivasindo)</p>
+                    <h1 class="title-card">Web Development Staff</h1>
+                    <p class="place-card">
+                        PT Adhikari Inovasi Indonesia (Adhivasindo)
+                    </p>
                     <p class="category-card">Internship - 2 mo</p>
                     <p class="description-card">
-                        Participated in developing their website products, designing the appearance of their product
-                        services website page for the mobile version, analyzing the logic to improve the features on
-                        their product website, and summarizing all the knowledge gained during the internship process
-                        <br>
+                        Participated in developing their website products, designing the
+                        appearance of their product services website page for the mobile
+                        version, analyzing the logic to improve the features on their
+                        product website, and summarizing all the knowledge gained during
+                        the internship process
                     </p>
+                    <div class="tools-card">
+                        <img src="src/icon/diamond-icon.png" alt="Diamond Icon" width="30" />
+                        <p>
+                            <span>Skills Involved:</span> <br />
+                            Figma, HTML5, TailwindCSS, JavaScript
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="container container-card">
                 <div class="image-card">
-                    <img class="image-first" src="src/img/first-robotics-logo.png" alt="">
+                    <img class="image-first" src="src/img/first-robotics-logo.png" alt="FIRST Logo" />
                 </div>
                 <div class="text-card">
-                    <h1 class="title-card">
-                        Mechanical Design Engineer
-                    </h1>
+                    <h1 class="title-card">Mechanical Design Engineer</h1>
                     <p class="place-card">R2045 Indonesian Robotics Team</p>
                     <p class="category-card">Full Time - 2 yrs</p>
                     <p class="description-card">
-                        Participated in developing effective design concepts, calculating accurate design dimensions,
-                        sketching 2D and 3D designs, creating design prototypes, collaborating with programming and
-                        electrical divisions to integrate final designs, conducting design evaluations, and compiling
-                        final project reports. </p>
+                        Participated in developing effective design concepts, calculating
+                        accurate design dimensions, sketching 2D and 3D designs, creating
+                        design prototypes, collaborating with programming and electrical
+                        divisions to integrate final designs, conducting design
+                        evaluations, and compiling final project reports.
+                    </p>
+                    <div class="tools-card">
+                        <img src="src/icon/diamond-icon.png" alt="Diamond Icon" width="30" />
+                        <p>
+                            <span>Skills Involved:</span> <br />Autodesk Fusion 360, Python
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -638,21 +180,24 @@
         </div>
         <div class="container container-education">
             <div class="container-grid">
-                <img src="" alt="">
-                <h1 class="title-grid"></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
-            </div>
-            <div class="container-grid">
-                <img src="" alt="">
-                <h1 class="title-grid"></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
-            </div>
-            <div class="container-grid">
-                <img src="" alt="">
-                <h1 class="title-grid"></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
+                <div class="container-subgrid container-subgrid-left">
+                    <img class="icon-grid" src="src/icon/book-icon.png" alt="High School" />
+                    <h1 class="title-grid">MAS Internasional TechnoNatura</h1>
+                    <p class="year-grid">Graduated: 2023</p>
+                </div>
+                <div class="container-subgrid container-subgrid-right">
+                    <img class="icon-grid" src="src/icon/universty-icon.png" alt="University" />
+                    <h1 class="title-grid">S1 Sistem Informasi, Telkom University</h1>
+                    <p class="year-grid">2023 -- Present</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="footer-section">
+        <p class="text-copyright">
+            2025 - Sultan Afdan Zamzami. All Rights Reserved.
+        </p>
     </section>
 </body>
 
