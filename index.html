@@ -8,68 +8,67 @@
     <link rel="icon" href="https://edurank.org/assets/img/uni-logos/telkom-university-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="src/styles/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header id="header-section" class="header">
-        <div class="container container-menu">
-            <a class="btn-menu btn-home" href="#">HOME</a>
-            <a class="btn-menu btn-skills" href="#skills-section">SKILLS</a>
-            <a class="btn-menu btn-experiences" href="#experiences-section">EXPERIENCES</a>
-            <a class="btn-menu btn-education" href="#education-section">EDUCATION</a>
+    <header id="header-section" class="header-section">
+        <div class="container-menu__header">
+            <a class="btn-menu__header btn-home__header" href="#">HOME</a>
+            <a class="btn-menu__header" href="#skills-section">SKILLS</a>
+            <a class="btn-menu__header" href="#experiences-section">EXPERIENCES</a>
+            <a class="btn-menu__header" href="#education-section">EDUCATION</a>
         </div>
     </header>
 
-    <!-- Home Section -->
+    <!-- Intro Section -->
     <section id="intro-section" class="intro-section">
-        <div class="container container-caption">
-            <h1 class="text text-hello">Hello, It's me</h1>
-            <h2 class="text text-name">Sultan Afdan Zamzami</h2>
-            <p class="text text-description">
-                Information Systems Student at Telkom University | Frontend Web
-                Enthusiast
+        <div class="container-caption__intro">
+            <h1 class="text-hello__intro">Hello, It's me</h1>
+            <h2 class="text-name__intro">Sultan Afdan Zamzami</h2>
+            <p class="text-description__intro">
+                Information Systems Student at Telkom University | Frontend Web Development Enthusiast
             </p>
-            <div class="container container-btn-explore">
-                <a href="#about-section"><button class="btn btn-explore">Get Started</button></a>
-                <a href="https://wa.me/6281219287168" target="_blank"><button class="btn btn-talk">Let's
+            <div class="container-btn__intro">
+                <a href="#about-section"><button class="btn-explore__intro">Get Started</button></a>
+                <a href="https://wa.me/6281219287168" target="_blank"><button class="btn-talk__intro">Let's
                         Chat</button></a>
             </div>
-            <div class="container container-intro-footer">
-                <h1 class="text text-download-cv">
+            <div class="container-link__intro">
+                <p class="text-download-cv__intro">
                     <a href="https://1drv.ms/b/c/102c69839390a726/ESankJODaSwggBCfEQAAAAAByf72AN4_W8u5eZV0VwaR6A?e=mes7wy"
-                        target="_blank" class="link-download-cv">Download</a>
+                        target="_blank" class="link-download-cv__intro">Download</a>
                     My Curriculum Vitae
-                </h1>
-                <div class="container container-icon-social-media">
-                    <a href="https://www.instagram.com/zamzamyst/" target="_blank"><img class="icon-social-media"
+                </p>
+                <div class="container-icon__intro">
+                    <a href="https://www.instagram.com/zamzamyst/" target="_blank"><img class="icon__intro"
                             src="src/icon/instagram-icon.png" alt="Logo Instagram`" /></a>
-                    <a href="https://www.linkedin.com/in/zamzamyst/" target="_blank"><img class="icon-social-media"
+                    <a href="https://www.linkedin.com/in/zamzamyst/" target="_blank"><img class="icon__intro"
                             src="src/icon/linkedin-icon.png" alt="Logo LinkedIn" /></a>
-                    <a href="https://github.com/zamzamyst" target="_blank"><img class="icon-social-media"
+                    <a href="https://github.com/zamzamyst" target="_blank"><img class="icon__intro"
                             src="src/icon/github-icon.png" alt="Logo GitHub" /></a>
                 </div>
             </div>
         </div>
-        <div class="container container-profile">
-            <div class="container container-picture">
-                <div class="bg bg-picture"></div>
-                <img class="profile-picture" src="src/img/no-bg-profile.png" alt="Sultan Afdan Zamzami" />
+        <div class="container-profile__intro">
+            <div class="container-image__intro">
+                <div class="bg-image__intro"></div>
+                <img class="image__intro" src="src/img/no-bg-profile.png" alt="Sultan Afdan Zamzami" />
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about-section" class="about-section">
-        <div class="container container-title">
+        <div class="container-title__all">
             <h1>About Me</h1>
         </div>
-        <div class="container container-about">
-            <p class="text text-about">
+        <div class="container-description__about">
+            <p class="text-description__about">
                 Hi! I'm Sultan, second-year Information Systems student, with a
                 special interest in Frontend Development. Has the ability to develop
                 websites using HTML, TailwindCSS, JavaScript, and basic understanding
@@ -84,61 +83,62 @@
 
     <!-- Skills Section -->
     <section id="skills-section" class="skills-section">
-        <div class="container container-title">
+        <div class="container-title__all">
             <h1>Skills</h1>
         </div>
-        <div class="container container-skills">
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/figma-logo.png" alt="Logo Figma" />
+        <div class="container-items__skills">
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/figma-logo.png" alt="Logo Figma" />
             </div>
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/html-logo.png" alt="Logo HTML5" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/html-logo.png" alt="Logo HTML5" />
             </div>
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/css-logo.png" alt="Logo CSS3" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/css-logo.png" alt="Logo CSS3" />
             </div>
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/tailwind-logo.png" alt="Logo Tailwind" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/tailwind-logo.png" alt="Logo Tailwind" />
             </div>
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/js-logo.png" alt="Logo JavaScript" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/js-logo.png" alt="Logo JavaScript" />
             </div>
-            <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/mysql-logo.svg " alt="Logo MySQL" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/mysql-logo.svg " alt="Logo MySQL" />
             </div>
-            <div class="container container-icon">
-                <img class="icon" src="src/icon/python-logo.png" alt="Logo Python" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/python-logo.png" alt="Logo Python" />
             </div>
-            <div class="container container-icon">
-                <img class="icon" src="src/icon/365-logo.png" alt="Logo 365 Office" />
+            <div class="container-icon__skills">
+                <img class="icon__skills" src="src/icon/365-logo.png" alt="Logo 365 Office" />
             </div>
         </div>
     </section>
 
     <!-- Experiences Section -->
     <section id="experiences-section" class="experiences-section">
-        <div class="container-title">
+        <div class="container-title__all">
             <h1>Experiences</h1>
         </div>
-        <div class="container container-experiences" targe>
-            <div class="container container-card">
-                <div class="image-card">
-                    <img class="image-adhivasindo src=" src="src/img/adhivasindo-logo.png" alt="Adhivasindo Logo" />
+        <div class="container-card__experiences">
+            <div class="card__experiences">
+                <div class="image-card__experiences ">
+                    <img class="image-adhivasindo__experiences src=" src="src/img/adhivasindo-logo.png"
+                        alt="Adhivasindo Logo" />
                 </div>
-                <div class="text-card">
-                    <h1 class="title-card">Web Development Staff</h1>
-                    <p class="place-card">
+                <div class="text-card__experiences">
+                    <h1>Web Development Staff</h1>
+                    <p>
                         PT Adhikari Inovasi Indonesia (Adhivasindo)
                     </p>
-                    <p class="category-card">Internship - 2 mo</p>
-                    <p class="description-card">
+                    <p class="category__experiences">Internship - 2 mo</p>
+                    <p class="description__experiences">
                         Participated in developing their website products, designing the
                         appearance of their product services website page for the mobile
                         version, analyzing the logic to improve the features on their
                         product website, and summarizing all the knowledge gained during
                         the internship process
                     </p>
-                    <div class="tools-card">
+                    <div class="skills__experiences">
                         <img src="src/icon/diamond-icon.png" alt="Diamond Icon" width="30" />
                         <p>
                             <span>Skills Involved:</span> <br />
@@ -147,22 +147,22 @@
                     </div>
                 </div>
             </div>
-            <div class="container container-card">
-                <div class="image-card">
-                    <img class="image-first" src="src/img/first-robotics-logo.png" alt="FIRST Logo" />
+            <div class="card__experiences">
+                <div class="image-card__experiences">
+                    <img class="image-first__experiences" src="src/img/first-robotics-logo.png" alt="FIRST Logo" />
                 </div>
-                <div class="text-card">
-                    <h1 class="title-card">Mechanical Design Engineer</h1>
-                    <p class="place-card">R2045 Indonesian Robotics Team</p>
-                    <p class="category-card">Full Time - 2 yrs</p>
-                    <p class="description-card">
+                <div class="text-card__experiences">
+                    <h1>Mechanical Design Engineer</h1>
+                    <p>R2045 Indonesian Robotics Team</p>
+                    <p class="category__experiences">Full Time - 2 yrs</p>
+                    <p class="description__experiences">
                         Participated in developing effective design concepts, calculating
                         accurate design dimensions, sketching 2D and 3D designs, creating
                         design prototypes, collaborating with programming and electrical
                         divisions to integrate final designs, conducting design
                         evaluations, and compiling final project reports.
                     </p>
-                    <div class="tools-card">
+                    <div class="skills__experiences">
                         <img src="src/icon/diamond-icon.png" alt="Diamond Icon" width="30" />
                         <p>
                             <span>Skills Involved:</span> <br />Autodesk Fusion 360, Python
@@ -175,27 +175,28 @@
 
     <!-- Education Section -->
     <section id="education-section" class="education-section">
-        <div class="container-title">
+        <div class="container-title__all">
             <h1>Education</h1>
         </div>
-        <div class="container container-education">
-            <div class="container-grid">
-                <div class="container-subgrid container-subgrid-left">
-                    <img class="icon-grid" src="src/icon/book-icon.png" alt="High School" />
-                    <h1 class="title-grid">MAS Internasional TechnoNatura</h1>
-                    <p class="year-grid">Graduated: 2023</p>
+        <div class="container-content__education">
+            <div class="container-grid__education">
+                <div class="container-subgrid__experiences">
+                    <img src="src/icon/book-icon.png" alt="Book Icon" />
+                    <h1>MAS Internasional TechnoNatura</h1>
+                    <p class="year__education">Graduated: 2023</p>
                 </div>
-                <div class="container-subgrid container-subgrid-right">
-                    <img class="icon-grid" src="src/icon/universty-icon.png" alt="University" />
-                    <h1 class="title-grid">S1 Sistem Informasi, Telkom University</h1>
-                    <p class="year-grid">2023 -- Present</p>
+                <div class="container-subgrid__experiences">
+                    <img src="src/icon/universty-icon.png" alt="University Icon" />
+                    <h1>S1 Sistem Informasi, Telkom University</h1>
+                    <p class="year__education">2023 -- Present</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <section class="footer-section">
-        <p class="text-copyright">
+        <p class="text__footer">
             2025 - Sultan Afdan Zamzami. All Rights Reserved.
         </p>
     </section>
