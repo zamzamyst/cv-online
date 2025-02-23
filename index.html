@@ -52,6 +52,12 @@
             font-weight: 500;
             font-size: 16px;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-menu:hover {
+            color: #ff9b42;
+            transform: scale(0.95);
         }
 
         .btn-home {
@@ -113,6 +119,7 @@
             font-weight: 700;
             color: white;
             background-color: #ff9b42;
+            transition: all 0.2s;
         }
 
         .btn-talk {
@@ -126,15 +133,19 @@
             font-weight: 700;
             color: white;
             background-color: #252734;
+            transition: all 0.2s;
         }
 
         .btn-explore:hover {
             background-color: #d5721c;
+            transform: scale(0.98);
         }
 
         .btn-talk:hover {
             background-color: white;
             color: #252734;
+            box-shadow: 0 0 10px 2px #000000;
+            transform: scale(0.98);
         }
 
         .container-intro-footer {
@@ -163,11 +174,13 @@
 
         .icon-social-media {
             width: 50px;
+            transition: all 0.2s;
         }
 
         .icon-social-media:hover {
-            border-radius: 1vw;
-            background-color: #ff9b42;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px #ff9b42;
+            transform: scale(0.90);
         }
 
         .container-profile {
@@ -194,7 +207,12 @@
             border-radius: 100%;
             background-color: #ff9b42;
             box-shadow: 0 0 50px 2px #ff9b42;
-
+            transition: box-shadow 0.3s ease;
+            
+        }
+        
+        .container-profile:hover .bg-picture  {
+            box-shadow: 0 0 100px 2px #ffffff;
         }
 
         .profile-picture {
@@ -251,7 +269,6 @@
             align-items: center;
             gap: 100px;
             width: 100%;
-            height: auto;
             padding-top: 100px;
             padding-bottom: 100px;
         }
@@ -262,10 +279,14 @@
             justify-content: center;
             gap: 30px;
         }
-
+        
         .container-icon {
-            height: 150px;
-            width: 8vw;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            height: fit-content;
+            width: 100px;
+            transition: all 0.2s;
 
         }
 
@@ -273,11 +294,10 @@
             width: 80%;
         }
 
-        .container-skills img:hover {
-            background-color: white;
-            border-radius: 10px;
-            padding: 5px;
-            transition: 0.2s;
+        .container-icon:hover {
+            transform: scale(1.1);
+            border-radius: 20px;
+            box-shadow: 0 0 20px 3px #ff9b42;
         }
 
         /* Experiences Section */
@@ -310,11 +330,14 @@
             padding: 20px 20px 20px 20px;
             border-radius: 30px;
             box-shadow: 0 0 20px 1px #000000;
-            background-color: #252734
+            background-color: #252734;
+            transition: all 0.2s;
         }
-
+        
         .container-card:hover {
-            background-color: #ff9b42
+            transform: scale(0.98);
+            /* background-color: #333647;      */
+            box-shadow: 0 0 20px 2px #ff9b42;
         }
 
         .image-card {
@@ -364,6 +387,28 @@
             padding-top: 100px;
             padding-bottom: 100px;
         }
+
+        .container-education {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            width: 75%;
+            height: 500px;
+            padding: 10px;
+            border:#000000;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .container-grid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+        }
+
+        
 
         /* Responsive */
         @media (max-width: 600px) {
@@ -457,7 +502,7 @@
     <!-- Navigation Bar -->
     <header id="header-section" class="header">
         <div class="container container-menu">
-            <a class="btn-menu btn-home" href="#intro-section">HOME</a>
+            <a class="btn-menu btn-home" href="#">HOME</a>
             <a class="btn-menu btn-skills" href="#skills-section">SKILLS</a>
             <a class="btn-menu btn-experiences" href="#experiences-section">EXPERIENCES</a>
             <a class="btn-menu btn-education" href="#">EDUCATION</a>
@@ -531,10 +576,13 @@
                 <img class="icon icon-html" src="src/icon/css-logo.png" alt="Logo CSS3">
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/mysql-logo.svg " alt="Logo MySQL">
+                <img class="icon icon-html" src="src/icon/tailwind-logo.png" alt="Logo Tailwind">
             </div>
             <div class="container container-icon">
-                <img class="icon icon-html" src="src/icon/python-logo.png" alt="Logo Python">
+                <img class="icon icon-html" src="src/icon/js-logo.png" alt="Logo JavaScript">
+            </div>
+            <div class="container container-icon">
+                <img class="icon icon-html" src="src/icon/mysql-logo.svg " alt="Logo MySQL">
             </div>
         </div>
     </section>
@@ -589,6 +637,22 @@
             <h1>Education</h1>
         </div>
         <div class="container container-education">
+            <div class="container-grid">
+                <img src="" alt="">
+                <h1 class="title-grid"></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
+            </div>
+            <div class="container-grid">
+                <img src="" alt="">
+                <h1 class="title-grid"></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
+            </div>
+            <div class="container-grid">
+                <img src="" alt="">
+                <h1 class="title-grid"></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, nam!</p>
+            </div>
+        </div>
     </section>
 </body>
 
