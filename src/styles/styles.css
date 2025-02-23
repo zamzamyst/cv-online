@@ -378,20 +378,20 @@ body {
     display: flex;
 }
 
-.container-subgrid__experiences {
+.container-subgrid__education {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
     border-radius: 30px;
     text-align: center;
     white-space: nowrap;
     transition: all 0.2s;
 }
 
-.container-subgrid__experiences:hover {
+.container-subgrid__education:hover {
     box-shadow: 0 0 20px 1px #ff9b42;
 }
 
